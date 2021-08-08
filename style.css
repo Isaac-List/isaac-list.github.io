@@ -2,6 +2,49 @@
  * Stylesheet for isaac-list.github.io
  */
 
+/* Normalize Margins */
+body,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: bisque;
+}
+
+header {
+  text-align: center;
+  border: .25em gray double;
+  border-radius: .25em;
+  width: 50%;
+  margin: 1.2em auto;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  font-style: italic;
+}
+
+.divider {
+  height: 2px;
+  background: black;
+  width: 92%;
+  margin: 1em auto;
+}
+
+.text {
+  display: flex;
+  flex: row wrap;
+  align-items: center;
+}
+
+.text > p {
+  margin: 1.5em;
+  border: 1px #222 dotted;
 }

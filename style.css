@@ -10,12 +10,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: bisque;
+  background: #464660;
+  color: #F1E9E5;
 }
 
-header {
+header, footer {
   text-align: center;
-  border: .25em gray double;
+  border: .25em #368B85 double;
   border-radius: .25em;
   width: 50%;
   margin: 1.2em auto;
@@ -27,24 +28,91 @@ main {
   flex-direction: column;
 }
 
+h1, h2 {
+  font-family: 'Zilla Slab', 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+p {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+a {
+  color: #F1E9E5;
+  text-decoration: none;
+}
+
 .section {
   font-style: italic;
+  text-align: center;
+  font-size: 2em;
 }
 
 .divider {
   height: 2px;
-  background: black;
+  background: #368B85;
   width: 92%;
   margin: 1em auto;
 }
 
 .text {
   display: flex;
-  flex: row wrap;
-  align-items: center;
+  flex-flow: row wrap;
+  align-items: start;
 }
 
 .text > p {
   margin: 1.5em;
-  border: 1px #222 dotted;
+  padding: 1em;
+  border: 2px #368B85 dotted;
+  background: #368B85;
+  border-radius: 12px;
+  flex: 1 1 6em;
+  text-align: center;
+}
+
+.text > p:nth-of-type(2) {
+  flex-grow: 2;
+}
+
+#social {
+  display: flex;
+  flex-flow: column;
+}
+
+#websites,
+#emails {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.links > a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  background: #B4B897;
+  padding: 1em 1.5em;
+  margin: .5em 1em;
+  box-shadow: 0 0 .1em .05em rgba(0,0,0,0.1);
+}
+
+.links > a:hover {
+  box-shadow: 0 0 .2em .12em rgba(0,0,0,0.1);
+}
+
+.links > a:active {
+  background: seashell;
 }

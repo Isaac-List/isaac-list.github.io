@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(180deg, rgba(16,115,206,1) 0%, rgba(13,156,144,1) 66%);
+}
+
+section.xp {
+  /*background: rgb(156, 77, 90);*/
+  margin: 2em;
+  padding: 1em;
+}
+
+section.xp > h1 {
+  display: block;
+  margin: 0 auto 0.4em;
+  color: #1a1a1a;
+  border-bottom: .25em #1a1a1a double;
+  width: max-content;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+article.job {
+  background: #1a1a1a;
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: .3em;
+  box-shadow: 0 0 8px 4px rgba(0,0,0,0.3);
+  flex-basis: 22em;
+}
+
+article.job > h2 {
+  margin: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+h3.position {
+  font-size: 1.4em;
+}
+
+h3.date {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+article.job a {
+  display: block;
+  font-style: normal;
+  font-family: "Zilla Slab", 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+}

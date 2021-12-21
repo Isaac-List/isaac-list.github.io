@@ -51,8 +51,10 @@ p {
 }
 
 a {
-  color: #F1E9E5;
+  color: #96b7aa;
   text-decoration: none;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.2em;
 }
 
 .section {
@@ -86,6 +88,17 @@ a {
 
 .text > p:nth-of-type(2) {
   flex-grow: 2;
+}
+
+.text > div {
+  margin: 1.5em;
+  padding: 1em;
+  border: 2px #C1666B dotted;
+  background: #C1666B;
+  border-radius: 12px;
+  flex: 1 1 6em;
+  text-align: center;
+  min-width: 16em;
 }
 
 #social {

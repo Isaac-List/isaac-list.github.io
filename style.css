@@ -58,7 +58,7 @@ a {
 }
 
 .section {
-  font-style: italic;
+  font-style: bold;
   text-align: center;
   font-size: 2em;
 }
@@ -90,7 +90,7 @@ a {
   flex-grow: 2;
 }
 
-.text > div {
+.project {
   margin: 1.5em;
   padding: 1em;
   border: 2px #C1666B dotted;
@@ -98,7 +98,10 @@ a {
   border-radius: 12px;
   flex: 1 1 6em;
   text-align: center;
-  min-width: 16em;
+}
+
+.project > img {
+  max-width: 32em;
 }
 
 #social {
